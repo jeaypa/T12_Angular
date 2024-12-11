@@ -1,0 +1,16 @@
+<h2>Lista de Artículos</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let articulo of articulos">
+      <td>{{ articulo.nombre }}</td>
+      <td>{{ articulo.precio }}</td>
+    </tr>
+  </tbody>
+</table>
+<a routerLink="/formulario">Agregar Nuevo Artículo</a>

@@ -1,0 +1,10 @@
+<h2>Formulario de Artículos</h2>
+<form (ngSubmit)="agregarArticulo()">
+  <label for="nombre">Nombre del artículo:</label>
+  <input id="nombre" type="text" [(ngModel)]="nombre" name="nombre" required />
+
+  <label for="precio">Precio:</label>
+  <input id="precio" type="number" [(ngModel)]="precio" name="precio" required />
+
+  <button type="submit">Agregar</button>
+</form>
